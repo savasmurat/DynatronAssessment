@@ -1,0 +1,31 @@
+<div>
+  <div class="modal-header">
+    <span class="modal-title">{{modalTitle}}</span>
+    <button type="button" class="btn-close" (click)="cancel()"></button>
+  </div>
+  <div class="modal-body">
+    <errors></errors>
+    <div class="input-group mb-3">
+      <label class="col-sm-3 col-form-label">First Name</label>
+      <div class="col-sm-9">
+        <input [(ngModel)]="customer.firstName" class="form-control" placeholder="First Name" />
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <label class="col-sm-3 col-form-label">Last Name</label>
+      <div class="col-sm-9">
+        <input [(ngModel)]="customer.lastName" class="form-control" placeholder="Last Name" />
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <label class="col-sm-3 col-form-label">Email</label>
+      <div class="col-sm-9">
+        <input [(ngModel)]="customer.email" class="form-control" placeholder="Email" />
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="saveChanges()">Save Changes</button>
+    <button type="button" class="btn btn-secondary" (click)="cancel()">Close</button>
+  </div>
+</div>

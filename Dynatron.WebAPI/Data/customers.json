@@ -1,0 +1,102 @@
+[
+  {
+    "first_name": "Murat",
+    "last_name": "Savas",
+    "email": "savas_murat@yahoo.com"
+  },
+  {
+    "first_name": "Alex",
+    "last_name": "Johnson",
+    "email": "alex.johnson@example.com"
+  },
+  {
+    "first_name": "Maria",
+    "last_name": "Garcia",
+    "email": "maria.garcia@example.com"
+  },
+  {
+    "first_name": "James",
+    "last_name": "Brown",
+    "email": "james.brown@example.com"
+  },
+  {
+    "first_name": "Emily",
+    "last_name": "Davis",
+    "email": "emily.davis@example.com"
+  },
+  {
+    "first_name": "Michael",
+    "last_name": "Miller",
+    "email": "michael.miller@example.com"
+  },
+  {
+    "first_name": "Sarah",
+    "last_name": "Wilson",
+    "email": "sarah.wilson@example.com"
+  },
+  {
+    "first_name": "Daniel",
+    "last_name": "Moore",
+    "email": "daniel.moore@example.com"
+  },
+  {
+    "first_name": "Laura",
+    "last_name": "Taylor",
+    "email": "laura.taylor@example.com"
+  },
+  {
+    "first_name": "David",
+    "last_name": "Anderson",
+    "email": "david.anderson@example.com"
+  },
+  {
+    "first_name": "Sophia",
+    "last_name": "Thomas",
+    "email": "sophia.thomas@example.com"
+  },
+  {
+    "first_name": "Ethan",
+    "last_name": "Jackson",
+    "email": "ethan.jackson@example.com"
+  },
+  {
+    "first_name": "Olivia",
+    "last_name": "White",
+    "email": "olivia.white@example.com"
+  },
+  {
+    "first_name": "William",
+    "last_name": "Harris",
+    "email": "william.harris@example.com"
+  },
+  {
+    "first_name": "Ava",
+    "last_name": "Martin",
+    "email": "ava.martin@example.com"
+  },
+  {
+    "first_name": "Noah",
+    "last_name": "Lee",
+    "email": "noah.lee@example.com"
+  },
+  {
+    "first_name": "Isabella",
+    "last_name": "Perez",
+    "email": "isabella.perez@example.com"
+  },
+  {
+    "first_name": "Jacob",
+    "last_name": "Clark",
+    "email": "jacob.clark@example.com"
+  },
+  {
+    "first_name": "Mia",
+    "last_name": "Lewis",
+    "email": "mia.lewis@example.com"
+  },
+  {
+    "first_name": "Liam",
+    "last_name": "Robinson",
+    "email": "liam.robinson@example.com"
+  }
+]

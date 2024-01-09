@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        Customers
+        <button class="btn btn-sm btn-outline-success float-end" (click)="openModal(false)">New Customer</button>
+      </div>
+      <div class="card-body p-0">
+        @if(customers.length > 0){
+        <table class="table table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th></th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Created DateTime</th>
+              <th>Last Updated DateTime</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            @for(customer of customers; track customer.customerId){
+            <tr [ngClass]="{'table-primary': customer.customerId === selectedCustomer.customerId}">
+              <td class="text-center">
+                <button class="btn btn-outline-primary btn-sm" (click)="selectCustomer(customer)">Select</button>
+              </td>
+              <td>{{customer.firstName}}</td>
+              <td>{{customer.lastName}}</td>
+              <td>{{customer.email}}</td>
+              <td>{{customer.createdDateTime | date:'short'}}</td>
+              <td>{{customer.lastUpdatedDateTime | date:'short'}}</td>
+              <td class="text-end">
+                <div ngbDropdown class="dropdown">
+                  <button ngbDropdownToggle class="btn btn-outline-primary btn-sm" type="button">
+                    Actions
+                  </button>
+                  <ul ngbDropdownMenu class="dropdown-menu-dark">
+                    <li><button ngbDropdownItem class="text-warning" (click)="openModal(true, customer)">Edit</button></li>
+                    <li><button ngbDropdownItem class="text-danger" (click)="deleteCustomer(customer.customerId)">Delete</button></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            }
+          </tbody>
+        </table>
+        }
+        @else {
+        <h3 class="text-center">No customers to display</h3>
+        }
+      </div>
+      <div class="card-footer">
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    @if(selectedCustomer){
+      <!--Customer Details-->
+    <customer-details [customer]="selectedCustomer"></customer-details>
+    }
+  </div>
+</div>
